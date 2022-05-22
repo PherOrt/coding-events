@@ -1,19 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
-<body class="container" >
+<body>
 
-
-<!--<h1>Coding Events</h1>-->
+<h1>Coding Events</h1>
 
 <header th:replace="fragments :: header"></header>
-<p>
-<ol>
-    <th:block th:each = "event : ${events}">
-        <li th:text ="${event}"></li>
-    </th:block>
-</ol>
-</p>
 
 </body>
 </html>

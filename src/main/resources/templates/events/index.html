@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="https://www.thymeleaf.org/">
+<html lang="en" xmlns:th="http://www.thymeleaf.org/">
 <head th:replace="fragments :: head"></head>
 <body class="container">
 
 <header th:replace="fragments :: header"></header>
 
 <table class="table table-striped">
-    <thead>
+    <thread>
         <tr>
             <th>Name</th>
         </tr>
-    </thead>
+    </thread>
     <tr th:each="event : ${events}">
-        <td th:text="${event}"></td>
+        <td th:text="${event.name}"></td>
     </tr>
 </table>
 
